@@ -36,3 +36,7 @@ form.addEventListener("submit", (e) => {
 });
 
 renderNotes();
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+}
